@@ -1,5 +1,5 @@
 # Rock Paper Scisors x 99
-> Outline a brief description of your project.
+> I build all of the logic needed for a more intense version of Rock Paper Scissors (RPS).
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
 
 <img src="" width="800px" alt="preview" title="preview"/>
@@ -19,25 +19,31 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+In this project, I build all of the logic needed for a more intense version of Rock Paper Scissors (RPS). Rather than selecting just one of Rock, Paper, or Scissors - each player will select three moves. Each move will consist of a type (Rock, Paper, or Scissors) as well as a strength value. Each player will have 99 total points to use as strength between all three of their moves. For example, an example set of moves might be:
+
+Move 1: Rock - 30 Strength Points
+Move 2: Rock - 60 Strength Points
+Move 3: Paper - 9 Strength Points
+The strength for each move must be at least 1.
+
+After each player's moves are chosen, they will compare moves in the order they were selected. If two moves have different types (for example, Rock vs Scissors), then normal RPS rules will apply (in this case, Rock beats Scissors). However, if two types are the same, then the move with more strength will win. If both strength values are equal, then a tie is declared.
+
+The player that wins the majority of the three rounds will be the winner of the game.
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- chai: 4
+- mocha: 6
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+To complete this project, the code need to contain the following:
 
+- [ ] Twelve global variables representing each player's move types and values (3 move types and 3 move values for each player). These variable names should be in the form of playerOneMoveOneType, playerOneMoveOneValue, etc.
+- [ ] A function called setPlayerMoves, which will take a string representing a player (in the form of 'Player One' or 'Player Two'), three move types, and three move values, and set the correct global move variables. The method signature for this function should be as follows: setPlayerMoves(player, moveOneType, moveOneValue, moveTwoType, moveTwoValue, moveThreeType, moveThreeValue).
+- [ ] A function called getRoundWinner, which takes a round number (1, 2, or 3), compares both player's move types and values for that round, and returns the appropriate winner ('Player One', 'Player Two', or 'Tie')
+- [ ] A function called getGameWinner, which compares both player's move types and values for the whole game and returns the appropriate winner ('Player One', 'Player Two', or 'Tie')
+- [ ] Bonus: A function called setComputerMoves, which chooses three random moves for player two. The move type for each move should be completely random, and the move values should be random but add up to 99.
 
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
