@@ -39,12 +39,21 @@ The player that wins the majority of the three rounds will be the winner of the 
 ## Features
 To complete this project, the code need to contain the following:
 
-- [ ] Twelve global variables representing each player's move types and values (3 move types and 3 move values for each player). These variable names should be in the form of playerOneMoveOneType, playerOneMoveOneValue, etc.
-- [ ] A function called setPlayerMoves, which will take a string representing a player (in the form of 'Player One' or 'Player Two'), three move types, and three move values, and set the correct global move variables. The method signature for this function should be as follows: setPlayerMoves(player, moveOneType, moveOneValue, moveTwoType, moveTwoValue, moveThreeType, moveThreeValue).
-- [ ] A function called getRoundWinner, which takes a round number (1, 2, or 3), compares both player's move types and values for that round, and returns the appropriate winner ('Player One', 'Player Two', or 'Tie')
-- [ ] A function called getGameWinner, which compares both player's move types and values for the whole game and returns the appropriate winner ('Player One', 'Player Two', or 'Tie')
-- [ ] Bonus: A function called setComputerMoves, which chooses three random moves for player two. The move type for each move should be completely random, and the move values should be random but add up to 99.
-
+- [x] [☑issue #2](https://github.com/SimonaPiz/rock-paper-scisors-x99/issues/2) Twelve global variables representing each player's move types and values (3 move types and 3 move values for each player). These variable names should be in the form of playerOneMoveOneType, playerOneMoveOneValue, etc.
+      ![Test Passed](https://user-images.githubusercontent.com/91121660/270665752-630bb36d-d991-4498-a54c-e144c03a9af0.png)
+      
+- [x] [☑issue #3](https://github.com/SimonaPiz/rock-paper-scisors-x99/issues/3) A function called setPlayerMoves, which will take a string representing a player (in the form of 'Player One' or 'Player Two'), three move types, and three move values, and set the correct global move variables. The method signature for this function should be as follows: setPlayerMoves(player, moveOneType, moveOneValue, moveTwoType, moveTwoValue, moveThreeType, moveThreeValue).
+      ![Test Passed](https://github.com/SimonaPiz/rock-paper-scisors-x99/assets/91121660/91d66d6d-b61f-4088-ba13-3ba99a831ab8)
+      
+- [x] [☑issue #4](https://github.com/SimonaPiz/rock-paper-scisors-x99/issues/4) A function called getRoundWinner, which takes a round number (1, 2, or 3), compares both player's move types and values for that round, and returns the appropriate winner ('Player One', 'Player Two', or 'Tie')
+      ![Test Passed](https://github.com/SimonaPiz/rock-paper-scisors-x99/assets/91121660/bdb244c4-47e2-433e-ad5a-96e531c39e9a)
+      
+- [x] [☑issue #5](https://github.com/SimonaPiz/rock-paper-scisors-x99/issues/5) A function called getGameWinner, which compares both player's move types and values for the whole game and returns the appropriate winner ('Player One', 'Player Two', or 'Tie')
+      ![Test Passed](https://github.com/SimonaPiz/rock-paper-scisors-x99/assets/91121660/6f85096f-8863-4a7c-9f74-08f491995226)
+      
+- [x] [☑issue #6](https://github.com/SimonaPiz/rock-paper-scisors-x99/issues/6) Bonus: A function called setComputerMoves, which chooses three random moves for player two. The move type for each move should be completely random, and the move values should be random but add up to 99.
+      ![Test Passed](https://github.com/SimonaPiz/rock-paper-scisors-x99/assets/91121660/7385e9eb-6ef2-4a53-9851-0f4dff73dba5)
+      
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
