@@ -1,7 +1,7 @@
 # Rock Paper Scisors x 99
 > I build all of the logic needed for a more intense version of Rock Paper Scissors (RPS).
 
-Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+Live demo [_here_](https://simonapiz.github.io/rock-paper-scisors-x99/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 <img src="https://github.com/SimonaPiz/rock-paper-scisors-x99/assets/91121660/be81894f-507c-4166-ad67-f3de74f8048e" width="800px" alt="preview" title="preview"/>
 
