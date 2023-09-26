@@ -274,3 +274,49 @@ const getGameWinner = () => {
   }
 };
 
+/*5.  Bonus: una funzione chiamata setComputerMoves, che sceglie tre mosse casuali per il 
+secondo giocatore. Il tipo di mossa per ogni mossa dovrebbe essere completamente casuale e 
+i valori di mossa dovrebbero essere casuali ma sommare fino a 99. */
+
+const setComputerMoves = () => {
+  const types = ['rock', 'paper', 'scissors'];
+  
+  // funzione per generare il tipo di mossa casuale
+  const generateType = arrayTypes => {
+    const casualIndex =  Math.floor(Math.random() * 3);
+    return arrayTypes[casualIndex];
+  };
+
+  // funzione per generare il valore della mossa casuale
+  const generateValue = () => {
+    return Math.floor(Math.random() * 100);
+  };
+
+  // settiemo i valori e i tipi di mossa per il computer
+  playerOneMoveOneType = generateType(types);
+  playerOneMoveOneValue = generateValue();
+  playerOneMoveTwoType = generateType(types);
+  playerOneMoveTwoValue = generateValue();
+  playerOneMoveThreeType = generateType(types);
+  playerOneMoveThreeValue = generateValue();
+
+  playerTwoMoveOneType = generateType(types);
+  playerTwoMoveOneValue = generateValue();
+  playerTwoMoveTwoType = generateType(types);
+  playerTwoMoveTwoValue = generateValue();
+  playerTwoMoveThreeType = generateType(types);
+  playerTwoMoveThreeValue = generateValue();
+
+  // verifichiamo che la somma dei valori sia 99
+  while ((playerOneMoveOneValue + playerOneMoveTwoValue + playerOneMoveThreeValue) !== 99) {
+    playerOneMoveOneValue = generateValue();
+    playerOneMoveTwoValue = generateValue();
+    playerOneMoveThreeValue = generateValue();    
+  }
+
+  while ((playerTwoMoveOneValue + playerTwoMoveTwoValue + playerTwoMoveThreeValue) !== 99) {
+    playerTwoMoveOneValue = generateValue();
+    playerTwoMoveTwoValue = generateValue();
+    playerTwoMoveThreeValue = generateValue();    
+  }
+};
