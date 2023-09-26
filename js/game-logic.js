@@ -215,3 +215,62 @@ const getRoundWinner = (roundNum) => {
   };
 };
 
+/*4.  Una funzione chiamata getGameWinner, che confronta i tipi di mosse e i valori di 
+entrambi i giocatori per l'intera partita e restituisce il vincitore appropriato 
+( 'Player One', 'Player Two', o 'Tie') */
+const getGameWinner = () => {
+  const roundOneWinner = getRoundWinner(1);
+  const roundTwoWinner = getRoundWinner(2);
+  const roundThreeWinner = getRoundWinner(3);
+
+  let playerOneScore = 0;
+  let playerTwoScore = 0;
+
+  // score round 1:
+  if (roundOneWinner === 'Player One') {
+    playerOneScore += 1;
+  } else if (roundOneWinner === 'Player Two') {
+    playerTwoScore += 1;
+  } else if (roundOneWinner === 'Tie') {
+    playerOneScore += 1;
+    playerTwoScore += 1;
+  } else {
+    return null;
+  };
+
+  // score round 2:
+  if (roundTwoWinner === 'Player One') {
+    playerOneScore += 1;
+  } else if (roundTwoWinner === 'Player Two') {
+    playerTwoScore += 1;
+  } else if (roundTwoWinner === 'Tie') {
+    playerOneScore += 1;
+    playerTwoScore += 1;
+  } else {
+    return null;
+  };
+
+  //score round 3:
+  if (roundThreeWinner === 'Player One') {
+    playerOneScore += 1;
+  } else if (roundThreeWinner === 'Player Two') {
+    playerTwoScore += 1;
+  } else if (roundThreeWinner === 'Tie') {
+    playerOneScore += 1;
+    playerTwoScore += 1;
+  } else {
+    return null;
+  };
+
+  // final score and final winner:
+  if (playerOneScore > playerTwoScore) {
+    return 'Player One';
+  } else if (playerOneScore < playerTwoScore) {
+    return 'Player Two';
+  } else if (playerOneScore === playerTwoScore) {
+    return 'Tie';
+  } else {
+    return null;
+  }
+};
+
